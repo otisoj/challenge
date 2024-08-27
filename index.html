@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge</title>
+        <link rel="shortcut icon" href="./images/icono.png?v=1">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo-alura.png" alt="Logo de Alura">
+        </header>
+        <main>
+            <section>
+                <textarea class="input-text" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div class="alert">
+                    <img src="./images/Vector.png" alt="Ícono de advertencia" class="info-icon">
+                    <h6 class="restriction">Solo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="buttons">
+                    <button name="encrypt" class="encrypt" onclick="encrypt()">Encriptar</button>
+                    <button name="decrypt" class="decrypt" onclick="decrypt()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="output-text"></textarea>
+                <div class="dynamic">
+                    <h2 class="text1">Ningún mensaje fue encontrado</h2>
+                    <h3 class="text2">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    <button name="copy" class="copy" onclick="copy()" style="display: none;"><span class="announcement"></span>Copiar</button>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer>
+        <p><span id="currentYear"></span> Jose Armando Ortega Gonzalez</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</html>
